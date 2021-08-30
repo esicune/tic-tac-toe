@@ -26,11 +26,15 @@ class TicTacToe {
     }
 
     getWinner() {
-        
+
     }
 
     noMoreTurns() {
-
+        if (!Array.prototype.concat(...this.gameField).includes(null)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     isDraw() {
